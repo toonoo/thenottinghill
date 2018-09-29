@@ -1,11 +1,12 @@
 <?php
-//include "inc_config.php"; 
+ 
 $con=mysqli_connect("localhost","root","root","thenotting_db");
 // Check connection
 if (mysqli_connect_errno())
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
+
 session_start();
 $page = basename($_SERVER['PHP_SELF']); 
 
@@ -19,16 +20,17 @@ $lang = $_SESSION['lang'];
 // Counter 
 $sql = "SELECT * FROM counter WHERE IP='$_SERVER[REMOTE_ADDR]' AND DATE = '".date("Y-m-d")."' ";  
 
-$result = mysqli_query($sql);  
+$result = mysqli_query($con,$sql);  
 
 $num = mysqli_num_rows($result);  
 if($num == 0){
     $strSQL = " INSERT INTO counter (DATE,IP) VALUES ('".date("Y-m-d")."','".$_SERVER["REMOTE_ADDR"]."') ";
-    mysqli_query($strSQL);   
+    mysqli_query($con,$strSQL);   
 }
 
 $slider = mysqli_query($con,"SELECT * FROM slide WHERE enable='1' ORDER BY created_date DESC");
-// print_r($slider);
+mysqli_fetch_all($slider,MYSQLI_ASSOC);
+// print_r($slider);die();
 // if($db->isConnected()){
 // 	echo 'toonoo1111222';die();
 // 	$slider = $db->GetAssoc("SELECT * FROM slide WHERE enable='1' ORDER BY created_date DESC");

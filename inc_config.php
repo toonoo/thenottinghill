@@ -31,4 +31,5 @@ $password="root";
         echo 'Error, could not connect to the database please try again again.';
     exit();
     }
+    mysqli_set_charset($con,"utf8");
 ?>

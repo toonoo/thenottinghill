@@ -30,7 +30,8 @@ if($_POST['action']=='appoint') {
         $date = (explode("/",$_POST['datepicker']));
         $date2 = $date[2]."-".$date[1]."-".$date[0];
         $addpoint = array('name'=>$_POST['name'],'lastname'=>$_POST['lastname'],'email'=>$_POST['email'],'phone'=>$_POST['phone'],'date'=>$date2,'time'=>$_POST['timepicker'],'detail'=>$_POST['detail'],'created_date'=>date("Y-m-d H:i:s"));
-        $db->AutoExecute("appointments",$addpoint,"INSERT");
+        
+        $con->AutoExecute("appointments",$addpoint,"INSERT");
 
         $message = "
             <table width='700' border='0' cellspacing='0' cellpadding='10' style='border:0px solid #000000;'>

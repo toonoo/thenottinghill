@@ -1,7 +1,10 @@
 <?php 
 include "inc_header.php"; 
 
-$newsdetail = $db->GetRow("SELECT * FROM news WHERE enable='1' AND id='".$_GET['newsid']."' ");
+// $newsdetail = $db->GetRow("SELECT * FROM news WHERE enable='1' AND id='".$_GET['newsid']."' ");
+$newsdetail_ = mysqli_query($con,"SELECT * FROM news WHERE enable='1' AND id='".$_GET['newsid']."' ");
+$newsdetail = mysqli_fetch_assoc($newsdetail_);
+//print_r($newsdetail['detail_th']);die();
 $date = date("d/m/Y",strtotime($newsdetail['created_date']));
 ?>
 

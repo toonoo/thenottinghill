@@ -8,10 +8,26 @@ if(isset($_GET['page'])) {
 }
 $rows_per_page = 5;
 $start_row = paging_start_row($current_page, $rows_per_page); 
-$news = $db->GetAssoc("SELECT SQL_CALC_FOUND_ROWS * FROM news WHERE enable='1' ORDER BY created_date DESC LIMIT $start_row, $rows_per_page ");
-$found_rows = mysql_query("SELECT FOUND_ROWS();");
-$total_rows = mysql_result($found_rows, 0, 0);
+// $news = $db->GetAssoc("SELECT SQL_CALC_FOUND_ROWS * FROM news WHERE enable='1' ORDER BY created_date DESC LIMIT $start_row, $rows_per_page ");
+$news = mysqli_query($con,"SELECT SQL_CALC_FOUND_ROWS * FROM news WHERE enable='1' ORDER BY created_date DESC LIMIT $start_row, $rows_per_page ");
+$found_rows = mysqli_query($con,"SELECT FOUND_ROWS();");
+$total_rows = mysqli_result($found_rows, 0, 0);
 $total_pages = paging_total_pages($total_rows, $rows_per_page);
+
+//==toonoo add function===
+function mysqli_result($res,$row=0,$col=0){
+    $numrows = mysqli_num_rows($res);
+    if ($numrows && $row <= ($numrows-1) && $row >=0){
+        mysqli_data_seek($res,$row);
+        $resrow = (is_numeric($col)) ? mysqli_fetch_row($res) : mysqli_fetch_assoc($res);
+        if (isset($resrow[$col])){
+            return $resrow[$col];
+        }
+    }
+    return false;
+}
+//==========end=============//
+
 ?>
 
 <section class="promo clearfix">

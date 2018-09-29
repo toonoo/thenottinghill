@@ -5,12 +5,12 @@ include "inc_header.php";
 // $gallery = $db->GetAssoc("SELECT * FROM gallery WHERE enable='1' ORDER BY created_date DESC LIMIT 4 ");
 // $pic = $db->GetRow("SELECT * FROM gallery WHERE enable='1' ORDER BY created_date DESC ");
 // $sumcount = $db->GetOne("SELECT count(id) FROM counter ");
-$con=mysqli_connect("localhost","root","root","thenotting_db");
-// Check connection
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
+// $con=mysqli_connect("localhost","root","root","thenotting_db");
+// // Check connection
+// if (mysqli_connect_errno())
+//   {
+//   echo "Failed to connect to MySQL: " . mysqli_connect_error();
+// }
 
 
 $news = mysqli_query($con,"SELECT * FROM news WHERE enable='1' ORDER BY created_date DESC LIMIT 2 ");
