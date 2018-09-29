@@ -1,0 +1,6 @@
+#RewriteEngine on
+php_value  short_open_tag on
+php_value auto_prepend_file none
+
+php_value upload_max_filesize 1000M
+php_value post_max_size 1000M

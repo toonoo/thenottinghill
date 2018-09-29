@@ -1,0 +1,12 @@
+AddHandler application/x-httpd-php .htm
+AddHandler application/x-httpd-php .html
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-s
+RewriteCond %{REQUEST_FILENAME} ^(.*)-(.*)-(.*)-(.*)-(.*)-(.*)-(.*)\.(.*)$
+RewriteRule ^(.*)-(.*)-(.*)-(.*)-(.*)-(.*)-(.*)\.(.*)$ $1.$8?$2=$3&$4=$5&$6=$7 [L]
+RewriteCond %{REQUEST_FILENAME} ^(.*)-(.*)-(.*)-(.*)-(.*)\.(.*)$
+RewriteRule ^(.*)-(.*)-(.*)-(.*)-(.*)\.(.*)$ $1.$6?$2=$3&$4=$5 [L]
+RewriteCond %{REQUEST_FILENAME} ^(.*)-(.*)-(.*)\.(.*)$
+RewriteRule ^(.*)-(.*)-(.*)\.(.*)$ $1.$4?$2=$3 [L]

@@ -1,0 +1,649 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<ew-language date="2015/7/2" version="11.0.3" id="th" name="Thai" desc="Thai" author="Z Axis IT Solution">
+	<locale>
+		<phrase id="locale" value=""/><!-- *** system locale for this language -->
+		<phrase id="use_system_locale" value="1"/><!-- *** change to "0" to disable system locale and use the following settings *** -->
+		<phrase id="decimal_point" value="."/>
+		<phrase id="thousands_sep" value=","/>
+		<phrase id="mon_decimal_point" value="."/>
+		<phrase id="mon_thousands_sep" value=","/>
+		<phrase id="currency_symbol" value="$"/>
+		<phrase id="positive_sign" value=""/>
+		<phrase id="negative_sign" value="-"/>
+		<phrase id="frac_digits" value="2"/>
+		<phrase id="p_cs_precedes" value="1"/>
+		<phrase id="p_sep_by_space" value="0"/>
+		<phrase id="n_cs_precedes" value="1"/>
+		<phrase id="n_sep_by_space" value="0"/>
+		<phrase id="p_sign_posn" value="3"/>
+		<phrase id="n_sign_posn" value="3"/>
+		<phrase id="time_zone" value="Asia/Bangkok"/><!-- *** used for multi-language site only *** -->
+	</locale>
+	<global>
+		<phrase id="actiondeleted" value="ลบเรียบร้อยแล้ว"/>
+		<phrase id="actioninserted" value="เพิ่มเรียบร้อยแล้ว"/>
+		<phrase id="actioninsertedgridadd" value="เพิ่มเรียบร้อยแล้ว (ในรูปแบบตาราง)"/>
+		<phrase id="actionupdated" value="แก้ไขเรียบร้อยแล้ว"/>
+		<phrase id="actionupdatedgridedit" value="แก้ไขเรียบร้อยแล้ว (ในรูปแบบตาราง)"/>
+		<phrase id="actionupdatedmultiupdate" value="แก้ไขเรียบร้อยแล้ว (แบบหลายข้อมูล)"/>
+		<phrase id="activateaccount" value="ยืนยันการเปิดเว็บไซต์เรียบร้อยแล้ว"/>
+		<phrase id="activatefailed" value="ยืนยันการเปิดเว็บไซต์ไม่สำเร็จ"/>
+		<phrase id="add" value="เพิ่ม"/>
+		<phrase id="addblankrow" value="เพิ่มข้อมูลเปล่า" imageurl="phpimages/addblankrow.gif" imagewidth="16" imageheight="16"/>
+		<phrase id="addbtn" value="เพิ่ม"/>
+		<phrase id="addlink" value="เพิ่ม"/>
+		<phrase id="addmasterdetaillink" value="Master/Detail เพิ่ม" class="icon-md-add ewIcon"/><!-- v11 -->
+		<phrase id="addsuccess" value="เพิ่มเรียบร้อยแล้ว"/>
+		<phrase id="advancedsearch" value="ค้นหาขั้นสูง"/><!-- v11 -->
+		<phrase id="advancedsearchbtn" value="ค้นหาขั้นสูง" class="icon-advanced-search ewIcon"/><!-- v11 -->
+		<phrase id="allrecords" value="ทั้งหมด"/>
+		<phrase id="allword" value="ทุกคำ"/>
+		<phrase id="alwaysask" value="ให้กรอกชื่อผู้ใช้และรหัสผ่านทุกครั้ง"/>
+		<phrase id="anyword" value="คำใดก็ได้"/>
+		<phrase id="audittrailautologin" value="เข้าสู่ระบบอัตโนมัติ"/>
+		<phrase id="audittrailfailedattempt" value="ไมผ่านเป็นจำนวน:%n"/>
+		<phrase id="audittrailuserloggedin" value="ผู้ใช้อยู่ในระบบแล้ว"/>
+		<phrase id="audittrailpasswordexpired" value="รหัสผ่านหมดอายุ"/>
+		<phrase id="audittraillogin" value="เข้าสู่ระบบ"/>
+		<phrase id="audittraillogout" value="ออกจากระบบ"/>
+		<phrase id="autologin" value="เข้าสู่ระบบอัตโนมัติทุกครั้ง"/>
+		<phrase id="average" value="ค่าเฉลี่ย"/>
+		<phrase id="backtolist" value="กลับไปหน้ารายการ"/>
+		<phrase id="backtologin" value="กลับไปหน้าเข้าสู่ระบบ"/>
+		<phrase id="backtomasterrecordpage" value="กลับไปหน้าหลัก"/>
+		<phrase id="batchdeletebegin" value="*** Batch delete begin ***"/>
+		<phrase id="batchdeleterollback" value="*** Batch delete rollback ***"/>
+		<phrase id="batchdeletesuccess" value="*** Batch delete successful ***"/>
+		<phrase id="batchinsertbegin" value="*** Batch insert begin ***"/>
+		<phrase id="batchinsertrollback" value="*** Batch insert rollback ***"/>
+		<phrase id="batchinsertsuccess" value="*** Batch insert successful ***"/>
+		<phrase id="batchupdatebegin" value="*** Batch update begin ***"/>
+		<phrase id="batchupdaterollback" value="*** Batch update rollback ***"/>
+		<phrase id="batchupdatesuccess" value="*** Batch update successful ***"/>
+		<!-- ***
+	<phrase id="BreadcrumbDivider" value="/"/>
+-->
+		<phrase id="buttonactions" value="ปุ่ม" class="icon-options ewIcon"/><!-- v11 -->
+		<phrase id="buttonaddedit" value="ปุ่มเพิ่มและแก้ไข" class="icon-addedit ewIcon"/><!-- v11 -->
+		<phrase id="buttondetails" value="ปุ่มรายละเอียด" class="icon-master-detail ewIcon"/><!-- v11 -->
+		<phrase id="buttonexport" value="ปุ่มส่งออก" class="icon-export ewIcon"/><!-- v11 -->
+		<phrase id="buttonlistoptions" value="Options" class="icon-options ewIcon"/><!-- v11 -->
+		<phrase id="buttonsearch" value="Search" class="icon-search ewIcon"/><!-- v11 -->
+		<phrase id="cancelbtn" value="ยกเลิก"/>
+		<phrase id="cancellink" value="ยกเลิก" class="glyphicon glyphicon-remove ewIcon"/><!-- v11 -->
+		<phrase id="changepwd" value="เปลี่ยนรหัสผ่าน"/>
+		<phrase id="changepwdpage" value="หน้าเปลี่ยนรหัสผ่าน"/>
+		<phrase id="changepwdbtn" value="เปลี่ยนรหัสผ่าน"/>
+		<phrase id="choosefilebtn" value="เลือกไฟล์..."/><!-- v11 -->
+		<phrase id="choosefile" value="เลือกไฟล์"/><!-- v11 -->
+		<phrase id="choosefiles" value="เลือกไฟล์"/><!-- v11 -->
+		<phrase id="confirm" value="ยืนยัน"/>
+		<phrase id="confirmbtn" value="ยืนยัน"/>
+		<phrase id="confirmpassword" value="ยืนยันรหัสผ่าน"/>
+		<phrase id="conflictcancellink" value="ยกเลิก"/>
+		<phrase id="lightboxtitle" value=" " client="1"/><!-- v11 -->
+		<phrase id="lightboxcurrent" value="image {current} of {total}" client="1"/><!-- Note: DO NOT translate "{current}" and "{total}" --><!-- v11 -->
+		<phrase id="lightboxprevious" value="กลับ" client="1"/><!-- v11 -->
+		<phrase id="lightboxnext" value="ถัดไป" client="1"/><!-- v11 -->
+		<phrase id="lightboxclose" value="ปิด" client="1"/><!-- v11 -->
+		<phrase id="lightboxxhrerror" value="ไม่สามารถโหลดข้อมูลได้." client="1"/><!-- v11 -->
+		<phrase id="lightboximgerror" value="ไม่สามารถอัพโหลดได้." client="1"/><!-- v11 -->
+		<phrase id="copy" value="คัดลอก"/>
+		<phrase id="copylink" value="คัดลอก" class="icon-copy ewIcon"/><!-- v11 -->
+		<phrase id="count" value="จำนวน"/>
+		<phrase id="customactioncompleted" value="เสร็จแล้ว"/>
+		<phrase id="customactioncancelled" value="ยกเลิก"/>
+		<phrase id="customview" value="มุมมองเฉพาะ"/>
+		<phrase id="delete" value="ลบออกจาก"/>
+		<phrase id="deletebtn" value="ยืนยันการลบ"/>
+		<phrase id="deletecancelled" value="ยกเลิกการลบเรียบร้อยแล้ว"/>
+		<phrase id="deleteconfirmmsg" value="ต้องการลบใช่หรือไม่" client="1"/>
+		<phrase id="deletelink" value="ลบ" class="glyphicon glyphicon-trash ewIcon"/><!-- v11 -->&gt;	
+	<phrase id="deletemulticonfirmmsg" value="ต้องการลบใช่หรือไม่" client="1"/>
+		<phrase id="deleteselectedlink" value="ลบรายการที่เลือก" class="glyphicon glyphicon-trash ewIcon"/><!-- v11 -->
+		<phrase id="deletesuccess" value="ลบเรียบร้อยแล้ว"/>
+		<phrase id="detaillink" value=""/>
+		<phrase id="detailcount" value="&lt;span dir='ltr'&gt;(%c)&lt;/span&gt;"/><!-- v11 -->
+		<phrase id="masterdetailcopylink" value="คัดลอก" class="icon-md-copy ewIcon"/><!-- v11 -->
+		<phrase id="masterdetaileditlink" value="แก้ไข" class="icon-md-edit ewIcon"/><!-- v11 -->
+		<phrase id="masterdetaillistlink" value="รายการ" class="icon-table ewIcon"/><!-- v11 -->
+		<phrase id="masterdetailviewlink" value="ดู" class="icon-md-view ewIcon"/><!-- v11 -->
+		<phrase id="dupindex" value="ข้อมูลซ้ำซ้อน '%v' สำหรับข้อมูล '%f'"/>
+		<phrase id="dupkey" value="ข้อมูลคีย์ซ้ำซ้อน: '%f'"/>
+		<phrase id="edit" value="แก้ไข"/>
+		<!-- ***
+	<phrase id="EditBtn" value="Edit"/>
+-->
+		<phrase id="editlink" value="แก้ไข" class="icon-edit ewIcon"/><!-- v11 -->
+		<phrase id="enternewpassword" value="กรุณากรอกรหัสผ่านใหม่" client="1"/>
+		<phrase id="enteroldpassword" value="กรุณากรอกรหัสผ่านเดิม" client="1"/>
+		<phrase id="enterpassword" value="กรุณากรอกรหัสผ่าน" client="1"/>
+		<phrase id="enterpwd" value="กรุณากรอกรหัสผ่าน" client="1"/>
+		<phrase id="enterrequiredfield" value="กรุณากรอกข้อมูล"/><!-- v11 -->
+		<phrase id="entersearchcriteria" value="กรุณากรอกเงื่อนไขการค้นหา"/>
+		<phrase id="enterusername" value="กรุณากรอกชื่อผู้ใช้" client="1"/>
+		<phrase id="entervalidatecode" value="กรุณากรอกโค้ดในภาพ" client="1"/><!-- v11 -->
+		<phrase id="entersenderemail" value="กรุณากรอกอีเมล์ผู้ส่ง" client="1"/>
+		<phrase id="enterpropersenderemail" value="อีเมล์ผู้ส่งเกินจำนวนที่กำหนด หรือมีอีเมล์บางอันผิดพลาด" client="1"/>
+		<phrase id="enterrecipientemail" value="กรุณากรอกอีเมล์ผู้รับ" client="1"/>
+		<phrase id="enterproperrecipientemail" value="อีเมล์ผู้รับเกินจำนวนที่กำหนด หรือมีอีเมล์บางอันผิดพลาด" client="1"/>
+		<phrase id="enterproperccemail" value="อีเมล์ cc เกินจำนวนที่กำหนด หรือมีอีเมล์บางอันผิดพลาด" client="1"/>
+		<phrase id="enterproperbccemail" value="อีเมล์ bcc เกินจำนวนที่กำหนด หรือมีอีเมล์บางอันผิดพลาด" client="1"/>
+		<phrase id="entersubject" value="กรุณากรอกหัวข้อของอีเมล์" client="1"/>
+		<phrase id="emailformsender" value="จาก"/>
+		<phrase id="emailformrecipient" value="ส่งไปยัง"/>
+		<phrase id="emailformcc" value="cc"/>
+		<phrase id="emailformbcc" value="bcc"/>
+		<phrase id="emailformsubject" value="หัวข้อ"/>
+		<phrase id="emailformmessage" value="ข้อความ"/>
+		<phrase id="emailformcontenttype" value="ส่งในนาม"/>
+		<phrase id="emailformcontenttypeurl" value="URL"/>
+		<phrase id="emailformcontenttypehtml" value="HTML"/>
+		<phrase id="enteruid" value="กรุณากรอกรหัสผู้ใช้" client="1"/>
+		<phrase id="entervalidemail" value="กรุณากรอกอีเมล์ที่ถูกต้อง" client="1"/>
+		<phrase id="exactphrase" value="วลีที่แน่นอน"/>
+		<phrase id="exceedmaxretry" value="ระบบถูกล๊อค เนื่องจากพยายามเข้าสู่ระบบมากเกินไป"/>
+		<phrase id="exceedmaxemailexport" value="จำนวนอีเมล์ที่ส่งออกมากเกินไป กรุณาลองอีกครั้ง"/>
+		<phrase id="exporttocsv" value="ส่งออกเป็น CS" class="icon-csv ewIcon"/><!-- v11 -->
+		<phrase id="exporttocsvtext" value="ส่งออกเป็น CSV เฉพาะตัวหนังสือ"/>
+		<phrase id="exporttoemail" value="อีเมล์" class="icon-email ewIcon"/><!-- v11 -->
+		<phrase id="exporttoemailtext" value="อีเมล์เฉพาะตัวหนังสือ" client="1"/>
+		<phrase id="exporttoexcel" value="ส่งออกเป็น Excel" class="icon-excel ewIcon"/><!-- v11 -->
+		<phrase id="exporttoexceltext" value="ส่งออกเป็น Excel เฉพาะตัวหนังสือ"/>
+		<phrase id="exporttohtml" value="ส่งออกเป็นเว็บเพจ" class="icon-html ewIcon"/><!-- v11 -->
+		<phrase id="exporttohtmltext" value="ส่งออกเป็นเว็บเพจเฉพาะตัวหนังสือ"/>
+		<phrase id="exporttopdf" value="ส่งออกเป็น PDF" class="icon-pdf ewIcon"/><!-- v11 -->
+		<phrase id="exporttopdftext" value="ส่งออกเป็น PDF เฉพาะตัวหนังสือ"/>
+		<phrase id="exporttoword" value="ส่งออกเป็น Word" class="icon-word ewIcon"/><!-- v11 -->
+		<phrase id="exporttowordtext" value="ส่งออกเป็น Word เฉพาะตัวหนังสือ"/>
+		<phrase id="exporttoxml" value="ส่งออกเป็น XML" class="icon-xml ewIcon"/><!-- v11 -->
+		<phrase id="exporttoxmltext" value="ส่งออกเป็น XML เฉพาะตัวหนังสือ"/>
+		<phrase id="failedtosendmail" value="การส่งอีเมล์ผิดพลาด"/>
+		<phrase id="fieldname" value="ชื่อข้อมูล"/>
+		<phrase id="fieldrequiredindicator" value="&lt;span class=&quot;ewRequired&quot;&gt;&amp;nbsp;*&lt;/span&gt;"/>
+		<phrase id="filenotfound" value="ไม่พบไฟล์"/><!-- *** characters need to be supported by EW_TMP_IMAGE_FONT *** -->
+		<phrase id="overwritebtn" value="เขียนทับ"/>
+		<phrase id="overwritelink" value="เขียนทับ"/>
+		<phrase id="forgotpwd" value="ลืมรหัสผ่าน"/>
+		<phrase id="goback" value="ย้อนกลับ"/>
+		<phrase id="gridaddcancelled" value="ยกเลิกการเพิ่ม"/><!-- v11 -->
+		<phrase id="gridaddlink" value="เพิ่มแบบตาราง" class="icon-grid-add ewIcon"/><!-- v11 -->
+		<phrase id="gridcancellink" value="ยกเลิก" class="glyphicon glyphicon-remove ewIcon"/><!-- v11 -->
+		<phrase id="grideditcancelled" value="ยกเลิการแก้ไข"/><!-- v11 -->
+		<phrase id="grideditlink" value="แก้ไขแบบตาราง" class="icon-grid-edit ewIcon"/><!-- v11 -->
+		<phrase id="gridinsertlink" value="เพิ่ม" class="glyphicon glyphicon-ok ewIcon"/><!-- v11 -->
+		<phrase id="gridsavelink" value="จัดเก็บ" class="glyphicon glyphicon-ok ewIcon"/><!-- v11 -->
+		<!-- ***
+	<phrase id="HideHighlight" value="Hide highlight" client="1"/>
+-->
+		<phrase id="highlight" value="ซ่อนการเน้นข้อมความ"/><!-- v11 -->
+		<phrase id="highlightbtn" value="เน้นข้อความ" class="icon-highlight ewIcon"/><!-- v11 -->
+		<phrase id="homepage" value="หน้าแรก" class="glyphicon glyphicon-home ewIcon"/><!-- v11 -->
+		<phrase id="incorrectcreditcard" value="หมายเลขบัตรเครดิตไม่ถูกต้อง"/>
+		<phrase id="incorrectdateymd" value="รูปแบบวันที่ผิด = yyyy%smm%sdd"/>
+		<phrase id="incorrectdatemdy" value="รูปแบบวันที่ผิด = mm%sdd%syyyy"/>
+		<phrase id="incorrectdatedmy" value="รูปแบบวันที่ผิด = dd%smm%syyyy"/>
+		<phrase id="incorrectshortdateymd" value="รูปแบบวันที่ผิด = yy%smm%sdd"/>
+		<phrase id="incorrectshortdatemdy" value="รูปแบบวันที่ผิด = mm%sdd%syy"/>
+		<phrase id="incorrectshortdatedmy" value="รูปแบบวันที่ผิด = dd%smm%syy"/>
+		<phrase id="incorrectemail" value="yyyy" client="1"/>
+		<phrase id="incorrectfield" value="อีเมล์ไม่ถูกต้อง" client="1"/>
+		<phrase id="incorrectfloat" value="รูปแบบทศนิยมไม่ถูกต้อง" client="1"/>
+		<phrase id="incorrectguid" value="GUID ไม่ถูกต้อง" client="1"/>
+		<phrase id="incorrectinteger" value="ตัวเลขไม่ถูกต้อง" client="1"/>
+		<phrase id="incorrectphone" value="หมายเลขโทรศัพท์ไม่ถูกต้อง" client="1"/>
+		<phrase id="incorrectregexp" value="เลขต้องอยู่ระหว่าง" client="1"/>
+		<phrase id="incorrectrange" value="และ" client="1"/>
+		<phrase id="incorrectssn" value="หมายเลขประกันสังคมไม่ถูกต้อง" client="1"/>
+		<phrase id="incorrecttime" value="รูปแบบเวลาไม่ถูกต้อง (hh:mm:ss)" client="1"/>
+		<phrase id="incorrectzip" value="รหัสไปรษณีย์ไม่ถูกต้อง" client="1"/>
+		<phrase id="inlineaddlink" value="เพิ่ม" class="icon-inline-add ewIcon"/><!-- v11 -->
+		<phrase id="inlinecopylink" value="คัดลอกด่วน" class="icon-inline-copy ewIcon"/><!-- v11 -->
+		<phrase id="inlineeditlink" value="แก้ไข" class="icon-inline-edit ewIcon"/><!-- v11 -->
+		<phrase id="insertcancelled" value="ยกเลิกการเพิ่มเรียบร้อยแล้ว"/>
+		<phrase id="insertfailed" value="การเพิ่มผิดพลาด" client="1"/>
+		<phrase id="insertlink" value="เพิ่ม" class="glyphicon glyphicon-ok ewIcon"/><!-- v11 -->
+		<phrase id="insertsuccess" value="เพิ่มเรียบร้อยแล้ว"/>
+		<phrase id="invalidemail" value="อีเมล์ไม่ถูกต้อง"/>
+		<phrase id="invalidfield" value="ข้อมูลไม่ถูกต้อง"/>
+		<phrase id="invalidkeyvalue" value="คีย์ไม่ถูกต้อง"/>
+		<phrase id="invalidrecord" value="ข้อมูลผิดพลาด คีย์ว่างเปล่า" client="1"/>
+		<phrase id="invalidpostrequest" value="ข้อความไม่ถุกต้อง"/><!-- v11 -->
+		<phrase id="invalidparameter" value="ข้อมูลผิดพลาด"/>
+		<phrase id="invalidpassword" value="รหัสผ่านผิดพลาด"/>
+		<phrase id="invalidnewpassword" value="รหัสผ่านใหม่ผิดพลาด"/>
+		<phrase id="invaliduidpwd" value="ชื่อผู้ใช้หรือรหัสผ่านผิดพลาด"/>
+		<phrase id="keep" value="เก็บไว้"/>
+		<phrase id="language" value="ภาษา"/>
+		<phrase id="loading" value="กำลังดึงข้อมูล" client="1"/>
+		<phrase id="login" value="เข้าสู่ระบบ"/>
+		<phrase id="logincancelled" value="ยกเลิกการเข้าสู่ระบบ"/>
+		<phrase id="loginoptions" value="ตัวเลือก"/><!-- v11 -->
+		<phrase id="loginpage" value="&lt;strong&gt;เข้าสู่ระบบ&lt;/strong&gt;"/>
+		<phrase id="logout" value="ออกจากระบบ"/>
+		<phrase id="masterrecord" value="ข้อมูลหลัก"/>
+		<phrase id="maxfilesize" value="ขนาดไฟล์ใหญ่เกินไป (%s bytes)" client="1"/>
+		<phrase id="messageok" value="ตกลง" client="1"/>
+		<phrase id="mismatchpassword" value="รหัสผ่านไม่ตรงกัน" client="1"/>
+		<phrase id="missinglookuptablename" value="ไม่มีชื่อตารางต้นทาง"/>
+		<phrase id="missingdisplayfieldname" value="ไม่มีชื่อข้อมูลต้นทาง"/>
+		<phrase id="missingdisplayfieldvalue" value="ไม่มีชื่อข้อมูลต้นทางที่ใช้ในการแสดง"/>
+		<phrase id="missinguserlevelid" value="ไม่มีรหัสผู้ใช้"/>
+		<phrase id="missinguserlevelname" value="ไม่มีชื่อของระดับผู้ใช้"/>
+		<phrase id="mobilemenu" value="เมนู"/>
+		<phrase id="multiplemasterdetails" value="รายละเอียดหลายอย่าง" class="icon-master-detail ewIcon"/><!-- v11 -->
+		<phrase id="new" value="ใหม่"/>
+		<phrase id="newpassword" value="รหัสผ่านใหม่"/>
+		<phrase id="newvalue" value="ค่าใหม่"/>
+		<phrase id="next" value="ถัดไป"/>
+		<phrase id="noaddrecord" value="ไม่มีการเพิ่มข้อมูลใด ๆ" client="1"/>
+		<phrase id="nofieldselected" value="ไม่มีการเลือกข้อมูล" client="1"/>
+		<phrase id="nopermission" value="สิทธิ์ของท่านไม่สามารถเข้าดูหน้านี้ได้"/>
+		<phrase id="noaddpermission" value="สิทธิ์ของท่านไม่สามารถเพิ่มข้อมูลหน้านี้ได้"/>
+		<phrase id="nodeletepermission" value="สิทธิ์ของท่านไม่สามารถลบข้อมูลหน้านี้ได้"/>
+		<phrase id="noeditpermission" value="สิทธิ์ของท่านไม่สามารถแก้ไขข้อมูลหน้านี้ได้"/>
+		<phrase id="norecord" value="ไม่พบข้อมูลใด ๆ"/>
+		<phrase id="norecordforkey" value="ไม่พบข้อมูลเมื่อใช้เงื่อนไข = "/>
+		<phrase id="norecordselected" value="ไม่มีข้อมูลใดถูกเลือก" client="1"/>
+		<phrase id="notablegenerated" value="ไม่มีการสร้างตารางใด ๆ"/>
+		<phrase id="nouserlevel" value="ไม่มีการตั้งค่าสิทธิ์การใช้งาน"/>
+		<phrase id="of" value="จากทั้งหมด"/>
+		<phrase id="old" value="เก่า"/>
+		<phrase id="oldpassword" value="รหัสผ่านเก่า"/>
+		<phrase id="optionalreadyexist" value="ตัวเลือกนี้มีอยู่แล้ว"/>
+		<phrase id="page" value="หน้า"/>
+		<phrase id="pagerfirst" value="รายการแรก"/>
+		<phrase id="pagerlast" value="รายการสุดท้าย"/>
+		<phrase id="pagernext" value="รายการถัดไป"/>
+		<phrase id="pagerprevious" value="รายการก่อนหน้า"/>
+		<phrase id="password" value="รหัสผ่าน"/>
+		<phrase id="passwordrequest" value="ร้องขอรหัสผ่าน"/>
+		<phrase id="passwordchanged" value="รหัสผ่านถูกเปลี่ยนเรียบร้อยแล้ว"/>
+		<phrase id="passwordexpired" value="รหัสผ่านหมดอายุ กรุณาเปลี่ยนรหัสผ่าน"/>
+		<phrase id="permission" value="การอนุญาต" class="icon-user ewIcon"/><!-- v11 -->
+		<phrase id="permissionaddcopy" value="เพิ่ม/คัดลอก"/>
+		<phrase id="permissiondelete" value="ลบ"/>
+		<phrase id="permissionedit" value="แก้ไข"/>
+		<phrase id="permissionlistsearchview" value="รายการ/ค้นหา/เปิดู"/>
+		<phrase id="permissionlist" value="รายการ"/>
+		<phrase id="permissionsearch" value="ค้นหา"/>
+		<phrase id="permissionview" value="เปิดดู"/>
+		<phrase id="pickdate" value="เลือกวันที่"/>
+		<phrase id="pleaseselect" value="กรุณาเลือก"/>
+		<phrase id="pleasewait" value="กรุณารอซักครู่" client="1"/>
+		<phrase id="primarykeyunspecified" value="ไม่มีการระบุ primary key"/>
+		<phrase id="printerfriendly" value="รูปแบบพร้อมพิมพ์" class="icon-print ewIcon"/><!-- v11 -->
+		<phrase id="printerfriendlytext" value="รูปแบบพร้อมพิมพ์เฉพาะตัวหนังสือ"/>
+		<phrase id="prev" value="ก่อนหน้า"/>
+		<phrase id="pwdemailsent" value="ส่งรหัสผ่านไปยังเมล์ของท่านเรียบร้อยแล้ว"/>
+		<phrase id="resetpwdemailsent" value="ส่งอีเมล์สำหรับเปลี่ยนแปลงรหัสผ่านเรียบร้อยแล้ว"/>
+		<phrase id="quicksearch" value="ค้นหาทันใจ"/>
+		<phrase id="quicksearchbtn" value="ค้นหา (*)"/>
+		<phrase id="quicksearchauto" value="อัตโนมัติ" client="1"/><!-- v11 -->
+		<phrase id="quicksearchautoshort" value="" client="1"/><!-- v11 -->
+		<phrase id="quicksearchall" value="ค้นหาทุกคำ" client="1"/><!-- v11 -->
+		<phrase id="quicksearchallshort" value="ทั้งหมด" client="1"/><!-- v11 -->
+		<phrase id="quicksearchany" value="คำใดๆ" client="1"/><!-- v11 -->
+		<phrase id="quicksearchanyshort" value="คำหลัก" client="1"/><!-- v11 -->
+		<phrase id="quicksearchexact" value="คำที่ตรงกัน" client="1"/><!-- v11 -->
+		<phrase id="quicksearchexactshort" value="ตรงกัน" client="1"/><!-- v11 -->
+		<phrase id="record" value="ข้อมูล"/>
+		<phrase id="recordchangedbyotheruser" value="ข้อมูลถูกเปลี่ยนแปลงโดยผู้ใช้อื่น กดปุ่ม reload เพิ่มดึงข้อมูลใหม่ (ข้อมูลของคุณจะหายไป) หรือกดปุ่ม Overwrite เมื่อบันทึกข้อมูลขอบคุณทับลงไป"/>
+		<phrase id="recorddeleted" value="ลบข้อมูลเรียบร้อยแล้ว"/>
+		<phrase id="recordinserted" value="เพิ่มข้อมูลเรียบร้อยแล้ว"/>
+		<phrase id="recordupdated" value="แก้ไขข้อมูลเรียบร้อยแล้ว"/>
+		<phrase id="recordsperpage" value="แสดง"/>
+		<phrase id="register" value="สมัครเปิดเว็บไซต์"/>
+		<phrase id="registerbtn" value="เปิดเว็บไซต์"/>
+		<phrase id="registersuccess" value="ลงทะเบียนเสร็จเรียบร้อยแล้ว"/>
+		<phrase id="registersuccessactivate" value="ลงทะเบียนเสร็จเรียบร้อยแล้ว ทางเราได้ส่งอีเมล์ไปให้ท่านเรียบร้อยแล้ว กรูณาคลิ๊กลิงค์ภายในอีเมล์ดังกล่าวเพื่อยืนยันการเปิดเว็บไซต์"/>
+		<phrase id="registerpage" value="เปิดเว็บไซต์"/>
+		<phrase id="relatedrecordrequired" value="ต้องการรายการที่เกี่ยวข้อง"/>
+		<phrase id="reloadbtn" value="เรียกข้อมูลใหม่"/>
+		<phrase id="reloadlink" value="เรียกข้อมูลใหม่"/>
+		<phrase id="rememberme" value="จำการเข้าระบบไว้"/>
+		<phrase id="remove" value="เอาออก"/>
+		<phrase id="replace" value="แทนที่"/>
+		<phrase id="report" value="รายงาน"/>
+		<phrase id="requestpwdpage" value="หน้าลืมรหัสผ่าน"/>
+		<phrase id="reset" value="ยกเลิก"/>
+		<phrase id="resetsearchbtn" value="ยกเลิกเงื่อนไขการค้นหา" class="icon-reset-search ewIcon"/><!-- v11 -->
+		<phrase id="resetsearch" value="ยกเลิกเงื่อนไขการค้นหา"/>
+		<phrase id="rptavg" value="เฉลี่ย"/>
+		<phrase id="rptdtlrec" value="ข้อมูลรายละเอียด"/>
+		<phrase id="rptgrandtotal" value="รวมทั้งสิ้น"/>
+		<phrase id="rptmax" value="มากที่สุด"/>
+		<phrase id="rptmin" value="น้อยที่สุด"/>
+		<phrase id="rptsum" value="ผลรวม"/>
+		<phrase id="rptsumhead" value="ผลรวมของ"/>
+		<phrase id="savebtn" value="บันทึก"/><!-- v11 -->
+		<phrase id="saveusername" value="จำชื่อผู้ใช้ไว้"/>
+		<phrase id="search" value="ค้นหา"/>
+		<phrase id="searchbtn" value="ค้นหา" class="glyphicon glyphicon-search ewIcon"/><!-- v11 -->
+		<phrase id="searchpanel" value="เครื่องมือการค้นหา"/><!-- v11 -->
+		<phrase id="sendemailbtn" value="ส่ง"/>
+		<phrase id="sendemailsuccess" value="อีเมล์ถูกส่งเรียบร้อยแล้ว" client="1"/>
+		<phrase id="sendpwd" value="ส่งรหัสผ่าน"/>
+		<phrase id="sequencenumber" value="ลำดับ"/>
+		<phrase id="showallbtn" value="แสดงทั้งหมด" class="icon-reset-search ewIcon"/><!-- v11 -->
+		<phrase id="showall" value="แสดงทั้งหมด"/><!-- v11 -->
+		<!-- ***
+	<phrase id="ShowHighlight" value="Show highlight" client="1"/>
+-->
+		<phrase id="srchlegend" value="&amp;nbsp;(*)"/>
+		<phrase id="table" value="ข้อมูล"/>
+		<phrase id="tbltypetable" value="ข้อมูล"/>
+		<phrase id="tbltypeview" value="แสดง"/>
+		<phrase id="tbltypecustomview" value="แสดงผล"/>
+		<phrase id="tbltypereport" value="รายงาน"/>
+		<phrase id="to" value="ถึง"/>
+		<phrase id="total" value="รวม"/>
+		<phrase id="unauthorizeduserid" value="ผู้ใช้ปัจจุบัน (%c) ไม่มีสิทธิ์กำหนดผู้ใช้ (%u)."/>
+		<phrase id="unauthorizedparentuserid" value="The current user (%c) is not authorized to assign the parent user ID (%p)."/>
+		<phrase id="unauthorizedmasteruserid" value="The current user (%c) is not authorized to insert the record. Master filter: %f"/>
+		<!-- ***
+	<phrase id="UnmatchedValue" value="Value does not exist" imageurl="{_images}/warn.gif" imagewidth="16" imageheight="15"/>
+-->&gt;	
+	<phrase id="update" value="แก้ไข"/>
+		<phrase id="updatebtn" value="แก้ไข"/>
+		<phrase id="updatecancelled" value="ยกเลิกการแก้ไขเรียบร้อยแล้ว"/>
+		<phrase id="updatefailed" value="การแก้ไขผิดพลาด"/>
+		<phrase id="updatelink" value="แก้ไข" class="glyphicon glyphicon-ok ewIcon"/><!-- v11 -->
+		<phrase id="updateselectall" value="เลือกทั้งหมด"/><!-- v11 -->
+		<phrase id="updateselectedlink" value="แก้ไขที่เลือกทั้งหมด" class="icon-edit ewIcon"/><!-- v11 -->
+		<phrase id="updatesuccess" value="แก้ไขเรียบร้อยแล้ว"/>
+		<phrase id="uploading" value="กำลังอัพโหลด..." client="1"/>
+		<phrase id="uploadstart" value="เริ่มอัพโหลด" client="1"/>
+		<phrase id="uploadcancel" value="ยกเลิกการอัพโหลด" client="1"/>
+		<phrase id="uploaddelete" value="ลบการอัพโหลด" client="1"/>
+		<phrase id="uploadoverwrite" value="อัพโหลดทับไฟล์เดิม" client="1"/>
+		<phrase id="uploaderrmsg1" value="อัพโหลดผิดพลาด 1"/>
+		<phrase id="uploaderrmsg2" value="อัพโหลดผิดพลาด 2"/>
+		<phrase id="uploaderrmsg3" value="อัพโหลดผิดพลาด 3"/>
+		<phrase id="uploaderrmsg4" value="อัพโหลดผิดพลาด 4"/>
+		<phrase id="uploaderrmsg6" value="อัพโหลดผิดพลาด 5"/>
+		<phrase id="uploaderrmsg7" value="อัพโหลดผิดพลาด 6"/>
+		<phrase id="uploaderrmsg8" value="อัพโหลดผิดพลาด 7"/>
+		<phrase id="uploaderrmsgpostmaxsize" value="อัพโหลดผิดพลาด ส่งข้อมูลได้สูงสุด"/>
+		<phrase id="uploaderrmsgmaxfilesize" value="อัพโหลดผิดพลาด ขนาดไฟล์สูงสุด"/>
+		<phrase id="uploaderrmsgminfilesize" value="อัพโหลดผิดพลาด ขนาดไฟล์เล็กสุด"/>
+		<phrase id="uploaderrmsgacceptfiletypes" value="อัพโหลดผิดพลาด ประเภทไฟล์ที่อนุญาต"/>
+		<phrase id="uploaderrmsgmaxnumberoffiles" value="อัพโหลดผิดพลาด จำนวนไฟล์มากสุด"/>
+		<phrase id="uploaderrmsgmaxwidth" value="อัพโหลดผิดพลาด ความกว้างมากสุด"/>
+		<phrase id="uploaderrmsgminwidth" value="อัพโหลดผิดพลาด ความกว้างน้อยสุด"/>
+		<phrase id="uploaderrmsgmaxheight" value="อัพโหลดผิดพลาด ความสูงมากสุด"/>
+		<phrase id="uploaderrmsgminheight" value="อัพโหลดผิดพลาด ความสูงน้อยสุด"/>
+		<phrase id="updatevalue" value="แก้ไข"/>
+		<phrase id="useremail" value="อีเมล์ผู้ใช้"/>
+		<phrase id="userexists" value="มีผู้ใช้นี้อยู่แล้ว"/>
+		<phrase id="userlevel" value="User Level"/>
+		<phrase id="userleveladministratorname" value="ชื่อระดับของผู้ใช้สำหรับระดับ -1 ต้องเป็น 'Administrator' เท่านั้น" client="1"/>
+		<phrase id="userlevelpermission" value="ระดับการอนุญาตของผู้ใช้"/>
+		<phrase id="userlevelidinteger" value="รหัสระดับของผู้ใช้ต้องเป็นเลขจำนวนเต็ม" client="1"/>
+		<phrase id="userleveldefaultname" value="ชื่อระดับของผู้ใช้สำหรับระดับ 0 ต้องเป็น 'Default' เท่านั้น" client="1"/>
+		<phrase id="userlevelidincorrect" value="ขอบเขตของรหัสระดับผู้ใช้ต้องมากกว่า 0" client="1"/>
+		<phrase id="userlevelnameincorrect" value="ขอบเขตของชื่อระดับของผู้ใช้ต้องไม่ใช่ 'Administrator' หรือ 'Default'" client="1"/>
+		<phrase id="userloggedin" value="ผู้ใช้ '%u' กำลังอยู่ในระบบ ณ ขณะนี้"/>
+		<phrase id="username" value="ชื่อผู้ใช้"/>
+		<phrase id="userprofilecorrupted" value="โปรไฟล์ของผู้ใช้มีปัญหา กรุณาออกจากระบบและเข้าสู่ระบบใหม่"/>
+		<phrase id="valuenotexist" value="Value does not exist" client="1"/><!-- v11 -->
+		<phrase id="view" value="เปิดดู"/>
+		<phrase id="viewimagegallery" value="เปิดดูรูปภาพ"/><!-- v11 -->
+		<phrase id="viewlink" value="เปิดดู" class="icon-view ewIcon"/><!-- v11 -->
+		<phrase id="viewpageaddlink" value="เพิ่ม" class="glyphicon glyphicon-plus ewIcon"/><!-- v11 -->
+		<phrase id="viewpagecopylink" value="คัดลอก" class="icon-copy ewIcon"/><!-- v11 -->
+		<phrase id="viewpagedeletelink" value="ลบ" class="glyphicon glyphicon-trash ewIcon"/><!-- v11 -->
+		<phrase id="viewpagedetaillink" value="รายละเอียด"/>
+		<phrase id="viewpageeditlink" value="แก้ไข" class="icon-edit ewIcon"/><!-- v11 -->
+		<phrase id="wrongfiletype" value="ไม่สามารถใช้ไฟล์ชนิดนี้ได้" client="1"/>
+		<phrase id="tableorview" value="ข้อมูล"/>
+		<phrase id="=" value="="/>
+		<phrase id="&lt;&gt;" value="&lt;&gt;"/>
+		<phrase id="&lt;" value="&lt;"/>
+		<phrase id="&lt;=" value="&lt;="/>
+		<phrase id="&gt;" value="&gt;"/>
+		<phrase id="&gt;=" value="&gt;="/>
+		<phrase id="like" value="ประกอบด้วย"/>
+		<phrase id="not like" value="ไม่ประกอบด้วย"/><!-- v11.0.3 -->
+		<phrase id="starts with" value="เริ่มต้นด้วย"/>
+		<phrase id="ends with" value="ลงท้ายด้วย"/>
+		<phrase id="is null" value="เป็นค่าว่าง"/>
+		<phrase id="is not null" value="ไม่เป็นค่าว่าง"/>
+		<phrase id="between" value="ระหว่าง"/>
+		<phrase id="and" value="และ"/>
+		<phrase id="or" value="หรือ"/>
+	</global>
+	<project><phrase id="bodytitle" value="zAdmin | The Notting Hill"/>
+<phrase id="footertext" value="Copyright © 2015 Z Axis It Solution. All rights reserved."/>
+<menu id="1"><phrase id="menutext" value="appointments"/>
+</menu>
+<menu id="2"><phrase id="menutext" value="gallery"/>
+</menu>
+<menu id="3"><phrase id="menutext" value="news"/>
+</menu>
+<menu id="4"><phrase id="menutext" value="news gallery"/>
+</menu>
+<menu id="5"><phrase id="menutext" value="plans"/>
+</menu>
+<menu id="6"><phrase id="menutext" value="plans house"/>
+</menu>
+<menu id="7"><phrase id="menutext" value="progress"/>
+</menu>
+<menu id="8"><phrase id="menutext" value="progress gallery"/>
+</menu>
+<menu id="9"><phrase id="menutext" value="project"/>
+</menu>
+<menu id="10"><phrase id="menutext" value="slide"/>
+</menu>
+<table id="appointments"><phrase id="tblcaption" value="appointments"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="name"><phrase id="fldcaption" value="name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="lastname"/>
+</field>
+<field id="_email"><phrase id="fldcaption" value="email"/>
+</field>
+<field id="phone"><phrase id="fldcaption" value="phone"/>
+</field>
+<field id="date"><phrase id="fldcaption" value="date"/>
+</field>
+<field id="time"><phrase id="fldcaption" value="time"/>
+</field>
+<field id="detail"><phrase id="fldcaption" value="detail"/>
+</field>
+<field id="enable"><phrase id="fldcaption" value="enable"/>
+<phrase id="fldtagvalue1" value="1"/>
+<phrase id="fldtagcaption1" value="1"/>
+<phrase id="fldtagvalue2" value="0"/>
+<phrase id="fldtagcaption2" value="0"/>
+</field>
+<field id="created_date"><phrase id="fldcaption" value="created date"/>
+</field>
+<field id="modified_date"><phrase id="fldcaption" value="modified date"/>
+</field>
+</table>
+<table id="gallery"><phrase id="tblcaption" value="gallery"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="image"><phrase id="fldcaption" value="image"/>
+</field>
+<field id="description_th"><phrase id="fldcaption" value="description th"/>
+</field>
+<field id="description_en"><phrase id="fldcaption" value="description en"/>
+</field>
+<field id="enable"><phrase id="fldcaption" value="enable"/>
+<phrase id="fldtagvalue1" value="1"/>
+<phrase id="fldtagcaption1" value="1"/>
+<phrase id="fldtagvalue2" value="0"/>
+<phrase id="fldtagcaption2" value="0"/>
+</field>
+<field id="created_date"><phrase id="fldcaption" value="created date"/>
+</field>
+<field id="modified_date"><phrase id="fldcaption" value="modified date"/>
+</field>
+</table>
+<table id="news"><phrase id="tblcaption" value="news"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="image"><phrase id="fldcaption" value="image"/>
+</field>
+<field id="name_th"><phrase id="fldcaption" value="name th"/>
+</field>
+<field id="name_en"><phrase id="fldcaption" value="name en"/>
+</field>
+<field id="detail_th"><phrase id="fldcaption" value="detail th"/>
+</field>
+<field id="detail_en"><phrase id="fldcaption" value="detail en"/>
+</field>
+<field id="enable"><phrase id="fldcaption" value="enable"/>
+<phrase id="fldtagvalue1" value="1"/>
+<phrase id="fldtagcaption1" value="1"/>
+<phrase id="fldtagvalue2" value="0"/>
+<phrase id="fldtagcaption2" value="0"/>
+</field>
+<field id="created_date"><phrase id="fldcaption" value="created date"/>
+</field>
+<field id="modified_date"><phrase id="fldcaption" value="modified date"/>
+</field>
+</table>
+<table id="news_gallery"><phrase id="tblcaption" value="news gallery"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="image"><phrase id="fldcaption" value="image"/>
+</field>
+<field id="enable"><phrase id="fldcaption" value="enable"/>
+<phrase id="fldtagvalue1" value="1"/>
+<phrase id="fldtagcaption1" value="1"/>
+<phrase id="fldtagvalue2" value="0"/>
+<phrase id="fldtagcaption2" value="0"/>
+</field>
+<field id="created_date"><phrase id="fldcaption" value="created date"/>
+</field>
+<field id="modified_date"><phrase id="fldcaption" value="modified date"/>
+</field>
+</table>
+<table id="plans"><phrase id="tblcaption" value="plans"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="image"><phrase id="fldcaption" value="image"/>
+</field>
+<field id="name_th"><phrase id="fldcaption" value="name th"/>
+</field>
+<field id="name_en"><phrase id="fldcaption" value="name en"/>
+</field>
+<field id="detail_th"><phrase id="fldcaption" value="detail th"/>
+</field>
+<field id="detail_en"><phrase id="fldcaption" value="detail en"/>
+</field>
+<field id="enable"><phrase id="fldcaption" value="enable"/>
+<phrase id="fldtagvalue1" value="1"/>
+<phrase id="fldtagcaption1" value="1"/>
+<phrase id="fldtagvalue2" value="0"/>
+<phrase id="fldtagcaption2" value="0"/>
+</field>
+<field id="created_date"><phrase id="fldcaption" value="created date"/>
+</field>
+<field id="modified_date"><phrase id="fldcaption" value="modified date"/>
+</field>
+</table>
+<table id="plans_house"><phrase id="tblcaption" value="plans house"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="plans_id"><phrase id="fldcaption" value="plans id"/>
+</field>
+<field id="image"><phrase id="fldcaption" value="image"/>
+</field>
+<field id="name_th"><phrase id="fldcaption" value="name th"/>
+</field>
+<field id="name_en"><phrase id="fldcaption" value="name en"/>
+</field>
+<field id="enable"><phrase id="fldcaption" value="enable"/>
+<phrase id="fldtagvalue1" value="1"/>
+<phrase id="fldtagcaption1" value="1"/>
+<phrase id="fldtagvalue2" value="0"/>
+<phrase id="fldtagcaption2" value="0"/>
+</field>
+<field id="created_date"><phrase id="fldcaption" value="created date"/>
+</field>
+<field id="modified_date"><phrase id="fldcaption" value="modified date"/>
+</field>
+</table>
+<table id="progress"><phrase id="tblcaption" value="progress"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="image"><phrase id="fldcaption" value="image"/>
+</field>
+<field id="project_name"><phrase id="fldcaption" value="project name"/>
+</field>
+<field id="project_date"><phrase id="fldcaption" value="project date"/>
+</field>
+<field id="enable"><phrase id="fldcaption" value="enable"/>
+<phrase id="fldtagvalue1" value="1"/>
+<phrase id="fldtagcaption1" value="1"/>
+<phrase id="fldtagvalue2" value="0"/>
+<phrase id="fldtagcaption2" value="0"/>
+</field>
+<field id="created_date"><phrase id="fldcaption" value="created date"/>
+</field>
+<field id="modified_date"><phrase id="fldcaption" value="modified date"/>
+</field>
+</table>
+<table id="progress_gallery"><phrase id="tblcaption" value="progress gallery"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="image"><phrase id="fldcaption" value="image"/>
+</field>
+<field id="enable"><phrase id="fldcaption" value="enable"/>
+<phrase id="fldtagvalue1" value="1"/>
+<phrase id="fldtagcaption1" value="1"/>
+<phrase id="fldtagvalue2" value="0"/>
+<phrase id="fldtagcaption2" value="0"/>
+</field>
+<field id="created_date"><phrase id="fldcaption" value="created date"/>
+</field>
+<field id="modified_date"><phrase id="fldcaption" value="modified date"/>
+</field>
+</table>
+<table id="project"><phrase id="tblcaption" value="project"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="image"><phrase id="fldcaption" value="image"/>
+</field>
+<field id="name"><phrase id="fldcaption" value="name"/>
+</field>
+<field id="sequence"><phrase id="fldcaption" value="sequence"/>
+</field>
+<field id="detail"><phrase id="fldcaption" value="detail"/>
+</field>
+<field id="staus"><phrase id="fldcaption" value="staus"/>
+</field>
+<field id="enable"><phrase id="fldcaption" value="enable"/>
+<phrase id="fldtagvalue1" value="1"/>
+<phrase id="fldtagcaption1" value="1"/>
+<phrase id="fldtagvalue2" value="0"/>
+<phrase id="fldtagcaption2" value="0"/>
+</field>
+<field id="created_date"><phrase id="fldcaption" value="created date"/>
+</field>
+<field id="modified_date"><phrase id="fldcaption" value="modified date"/>
+</field>
+</table>
+<table id="slide"><phrase id="tblcaption" value="slide"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="image"><phrase id="fldcaption" value="image"/>
+</field>
+<field id="enable"><phrase id="fldcaption" value="enable"/>
+<phrase id="fldtagvalue1" value="1"/>
+<phrase id="fldtagcaption1" value="1"/>
+<phrase id="fldtagvalue2" value="0"/>
+<phrase id="fldtagcaption2" value="0"/>
+</field>
+<field id="created_date"><phrase id="fldcaption" value="created date"/>
+</field>
+<field id="modified_date"><phrase id="fldcaption" value="modified date"/>
+</field>
+</table>
+</project>
+</ew-language>

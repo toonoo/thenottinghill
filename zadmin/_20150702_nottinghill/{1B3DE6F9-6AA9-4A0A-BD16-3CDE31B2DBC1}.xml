@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<configuration date="2015/07/07" author="e.World Technology Ltd.">
+<project id="{1B3DE6F9-6AA9-4A0A-BD16-3CDE31B2DBC1}" file="Z:\theNottingHill\_Resources\_zadmin\20150702_nottinghill.pmp" name="_20150702_nottinghill" product="PHPMaker" version="11.0" datetime="2015/07/07 09:38:52" languagefolder="phplang" userlevel="">
+<table id="appointments" name="appointments" caption="Appointments" userlevel="" priv="1"/>
+<table id="gallery" name="gallery" caption="Gallery" userlevel="" priv="1"/>
+<table id="news" name="news" caption="News" userlevel="" priv="1"/>
+<table id="news_gallery" name="news_gallery" caption="News gallery" userlevel="" priv="1"/>
+<table id="plans" name="plans" caption="Plans" userlevel="" priv="1"/>
+<table id="plans_house" name="plans_house" caption="Plans house" userlevel="" priv="1"/>
+<table id="progress" name="progress" caption="Progress" userlevel="" priv="1"/>
+<table id="progress_gallery" name="progress_gallery" caption="Progress gallery" userlevel="" priv="1"/>
+<table id="project" name="project" caption="Project" userlevel="" priv="1"/>
+<table id="slide" name="slide" caption="Slide" userlevel="" priv="1"/>
+</project></configuration>

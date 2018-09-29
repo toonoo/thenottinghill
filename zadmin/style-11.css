@@ -1,0 +1,555 @@
+/* Table of Content
+==================================================
+    #Basic
+    #Typography
+    #Links
+    #Lists
+    #Buttons
+    #Forms
+    #Misc */
+/*Basic
+==================================================*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+body{
+    background: #ffffff;
+    font: normal 14px/16px "Roboto", Sans-serif;
+}
+.ewSiteTitle {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px white;
+    color: #dbdbdb;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    display: none;
+}
+.ewHome span{
+    font-size: 10px;
+}
+/*Navbar*/
+.navbar-brand, .navbar-nav > li > a {
+    text-shadow: 0 0;
+}
+.navbar-default {
+/*    background-image: none;
+    background-color: #444D58;
+    box-shadow: 0px 1px 0px white;
+    -moz-box-shadow: 0px 1px 0px white;
+    -webkit-box-shadow: 0px 1px 0px white;
+    border: none;
+    border-radius: 0px;*/
+    background-image: -webkit-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+    background-image: -o-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+}
+.navbar-default .navbar-brand {
+    color: #000000;
+    opacity: 1;
+    /*    font: 700 16px/16px "Roboto","Tahoma",Sans-serif;*/
+    -webkit-transition: opacity 0.15s linear;
+    -o-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #ffffff;
+
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #9D9D9D;
+    opacity: 0.8;
+    -webkit-transition: opacity 0.15s linear;
+    -o-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+}
+.navbar-default .navbar-nav > li > a {
+ /* color: #BCC2CB;*/
+   /* -webkit-transition: color 0.15s linear;
+    -o-transition: color 0.15s linear;
+    transition: color 0.15s linear;*/
+
+    float: none;
+    color: #777777;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ffffff;
+    -webkit-transition: color 0.15s linear;
+    -o-transition: color 0.15s linear;
+    transition: color 0.15s linear;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+   /* color: white;
+    background-color: #55616F;
+    -webkit-transition: color 0.15s linear;
+    -o-transition: color 0.15s linear;
+    transition: color 0.15s linear;*/
+    background-image: -webkit-linear-gradient(#ebebeb 0%, #f3f3f3 100%);
+    background-image: -o-linear-gradient(#ebebeb 0%, #f3f3f3 100%);
+    background-image: linear-gradient(#ebebeb 0%, #f3f3f3 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff3f3f3', GradientType=0);
+    -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+/*    background-image: none;
+    color: white;
+    background-color: #394048;
+    box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;*/
+    background-image: -webkit-linear-gradient(#ebebeb 0%, #f3f3f3 100%);
+    background-image: -o-linear-gradient(#ebebeb 0%, #f3f3f3 100%);
+    background-image: linear-gradient(#ebebeb 0%, #f3f3f3 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff3f3f3', GradientType=0);
+    -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
+}
+}  
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+    color: #6F8190;
+    background-color: transparent;
+}   
+.navbar-default .navbar-toggle {
+    border-color: #3E4850;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #394048;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #BCC2CB;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #394048;
+}  
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: white;
+}  
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+    color: #BCC2CB;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: white;
+    background-color: #4E5966;
+}   
+/*Dropdown*/
+.dropdown-menu {
+/*    background-color: #55616F;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;*/
+    color: #777777;
+    background-image: -webkit-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+    background-image: -o-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+}    
+.dropdown-menu > li > a{
+   /* padding: 8px 20px;
+   color: #CED5DE;*/
+   padding: 5px 10px;
+   color: #777777;
+}    
+.dropdown-menu > li > a:hover,
+.navbar-default.dropdown-menu > li > a:focus {
+   /* background-image: none;
+    background-color: #5D6B7A;
+    color: white;*/
+    background-image: -webkit-linear-gradient(#ebebeb 0%, #f3f3f3 100%);
+    background-image: -o-linear-gradient(#ebebeb 0%, #f3f3f3 100%);
+    background-image: linear-gradient(#ebebeb 0%, #f3f3f3 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff3f3f3', GradientType=0);
+    -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
+}    
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+   /* background-image: none;
+   background-color: #394048;*/
+   background-image: -webkit-linear-gradient(#ebebeb 0%, #f3f3f3 100%);
+   background-image: -o-linear-gradient(#ebebeb 0%, #f3f3f3 100%);
+   background-image: linear-gradient(#ebebeb 0%, #f3f3f3 100%);
+   background-repeat: repeat-x;
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff3f3f3', GradientType=0);
+   -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
+   box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  color: #777777;
+  text-decoration: none;
+  outline: 0;
+  background-color: #428bca;
+}
+
+/*Breadcrumb*/
+.breadcrumb {
+    font-size: 12px;
+    margin-left: -12px;
+    background-color: transparent;
+}  
+.breadcrumb > li + li:before {
+    content: "\00a0\00bb\00a0";
+    color: #cccccc;
+}  
+.breadcrumb > .active {
+    color: #777777;
+}    
+/*Glyphicon Modifier*/
+a span,
+a span:hover,
+a span:focus {
+    text-decoration: none;
+    border-bottom: 0;
+}    
+li a:hover , li a:focus {
+    text-decoration: none;
+}
+/*Tooltip*/ 
+.tooltip-inner {
+    color: #ffffff;
+    box-shadow: inset 0px 1px 0px #6C7887, 0px 0px 0px 1px #394048;
+    -webkit-box-shadow: inset 0px 1px 0px #6C7887, 0px 0px 0px 1px #394048;
+    -moz-box-shadow: inset 0px 1px 0px #6C7887, 0px 0px 0px 1px #394048;
+    background-color: #394048;
+}
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow{
+    border-top-color: #394048;
+} 
+.tooltip.right .tooltip-arrow{
+    border-right-color: #394048;
+}  
+.tooltip.left .tooltip-arrow {
+    border-left-color: #394048;
+}  
+.tooltip.bottom .tooltip-arrow,
+.tooltip.bottom-left .tooltip-arrow,
+.tooltip.bottom-right .tooltip-arrow{
+    border-bottom-color: #394048;
+}
+/*Typography
+==================================================*/
+/*Links
+==================================================*/
+a, a:visited {
+    color: #394048;
+    text-decoration:none;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+a:hover{
+    text-decoration:none;
+    color: #6195B7;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+a.ewLink{
+    text-decoration:none;
+}
+.ewLinkSeparator {
+    text-decoration:none;
+}
+/*Lists
+==================================================*/
+/*Buttons
+==================================================*/
+.btn:active,
+.btn.active {
+    outline: 0;
+    color: #b2b2b2;
+    box-shadow:inset 0 1px 1px 0 rgba(0,0,0,0.1), 0px 1px 0px white;
+    -webkit-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.1), 0px 1px 0px white;
+    -moz-box-shadow:inset 0 1px 1px 0 rgba(0,0,0,0.1), 0px 1px 0px white;    
+    background-color: #e9e9e9;
+}
+.btn.active:hover{
+    box-shadow: inset 0px 1px 0px white , 0px 1px 0px whit ;
+    -webkit- box-shadow: inset 0px 1px 0px white , 0px 1px 0px whit ;
+    -moz- box-shadow: inset 0px 1px 0px white , 0px 1px 0px whit ;
+}
+.btn.active:focus{
+    box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.1);
+}
+.btn-default{
+    background-image: none;
+    background-color: #F8F8F8;
+    color: #444D58;
+    text-shadow: 1px 1px 0px #FFF;
+    border-color: #dfdfdf;
+    box-shadow: 0px 1px 0px white inset, 0px 1px 0px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 0px 1px 0px white inset, 0px 1px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 1px 0px white inset, 0px 1px 0px rgba(0,0,0,0.05);
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.btn-default:hover {
+    background-color: #ECF7FE;
+    border-color: #BADFF7;
+    color: #428BCA;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.btn-default:focus{
+    box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.1);
+    background-color: #E9E9E9;
+    color: #B2B2B2;
+    border-color: #DBDBDB;
+}
+.btn-primary, .btn-primary:focus{
+    background-image: none;
+    background-color: #444D58;
+    border-color: #394048;
+    color: white;
+    box-shadow: 0px 1px 0px #55626C inset, 0px 1px 0px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 0px 1px 0px #55626C inset, 0px 1px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 1px 0px #55626C inset, 0px 1px 0px rgba(0,0,0,0.05);
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.btn-primary:hover{
+    background-color: #55616F;
+    border-color: #444D58;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}   
+/*Form
+==================================================*/
+.form-control{
+    border-color: #DFDFDF;
+    box-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+    -moz-box-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+}
+.form-control:focus {
+    border-color: #BADFF7;
+    box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+}
+.form-control::-moz-placeholder {
+    color: #d1d1d1;
+}
+.form-control:-ms-input-placeholder {
+    color: #d1d1d1;
+}
+.form-control::-webkit-input-placeholder {
+    color: #d1d1d1;
+}
+.control-label{
+    color: inherit;
+}
+.control-label:after{
+    content: ":";
+    color:#DBDBDB ;
+    margin-left: 5px;
+}
+/*Alert
+==================================================*/
+.alert-warning {
+    background-image: none;
+    background-color: #FFF8C4;
+    border-color: #F2C779;
+}
+.alert {
+    box-shadow: 0px 1px 0px white inset, 0px 1px 0px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 0px 1px 0px white inset, 0px 1px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 1px 0px white inset, 0px 1px 0px rgba(0,0,0,0.05);
+    text-shadow: 0 0;
+}
+.alert-warning {
+    background-color: #FCF8E3;
+    border-color: #FAEBCC;
+    color: #8A6D3B;
+}
+.alert .close{
+    margin-left: 10px;
+    line-height: inherit;
+}
+/*Footer
+==================================================*/
+#ewFooterRow{
+    border-top: 1px solid #F9F9F9;
+    background-color: #efefef;
+    display: none; 
+}
+.ewFooterText{
+    color:#b5b5b5;
+    font-size: 11px;
+    padding: 12px;
+} 
+ /*Table
+ ==================================================*/
+ .ewGrid {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px white;
+    -webkit-box-shadow: 1px 1px white;
+    -moz-box-shadow: 1px 1px white;
+    border: 5px solid #EDEDED;
+}
+.ewGrid .ewTable > tbody > tr > td,
+.ewGrid .ewTable > tfoot > tr > td  {
+    border: 1px solid #E5E5E5;}
+    .ewGrid .ewTable .ewTableAltRow{
+        background-color: white;
+    }
+    .ewGrid .ewTable .ewTableHighlightRow > td {
+        box-shadow: inset 0 0 0 1px #BADFF7, inset 0 0 0 2px white;
+        -webkit-box-shadow: inset 0 0 0 1px #BADFF7, inset 0 0 0 2px white;
+        -moz-box-shadow: inset 0 0 0 1px #BADFF7, inset 0 0 0 2px white;
+        background-color: #ECF7FE;
+        color: inherit;
+    }
+    .ewGrid .ewTable .ewTableSelectRow > td {
+        background-color: #F9F9F9!important;
+        color: #6195B7;
+        font-weight: bold;
+        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255,0.6 ) 25%,transparent 25%, transparent 50%,rgba(255, 255, 255, 0.6) 50%,rgba(255, 255, 255, 0.6) 75%,transparent 75%, transparent);
+        background-image: -o-linear-gradient(45deg, rgba(255, 255, 255,0.6 ) 25%,transparent 25%, transparent 50%,rgba(255, 255, 255, 0.6) 50%,rgba(255, 255, 255, 0.6) 75%,transparent 75%, transparent);
+        background-image: linear-gradient(45deg, rgba(255, 255, 255,0.6 ) 25%,transparent 25%, transparent 50%,rgba(255, 255, 255, 0.6) 50%,rgba(255, 255, 255, 0.6) 75%,transparent 75%, transparent);
+        background-size: 40px 40px;
+        -webkit-animation: progress-bar-stripes 2s linear infinite;
+        -o-animation: progress-bar-stripes 2s linear infinite;
+        animation: progress-bar-stripes 2s linear infinite;
+    }
+    .ewGrid .ewTable .ewTableEditRow > td {
+        background-color: #f9f9f9;
+        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255,0.6 ) 25%,transparent 25%, transparent 50%,rgba(255, 255, 255, 0.6) 50%,rgba(255, 255, 255, 0.6) 75%,transparent 75%, transparent);
+        background-image: -o-linear-gradient(45deg, rgba(255, 255, 255,0.6 ) 25%,transparent 25%, transparent 50%,rgba(255, 255, 255, 0.6) 50%,rgba(255, 255, 255, 0.6) 75%,transparent 75%, transparent);
+        background-image: linear-gradient(45deg, rgba(255, 255, 255,0.6 ) 25%,transparent 25%, transparent 50%,rgba(255, 255, 255, 0.6) 50%,rgba(255, 255, 255, 0.6) 75%,transparent 75%, transparent);
+        background-size: 40px 40px;
+        -webkit-animation: progress-bar-stripes 2s linear infinite;
+        -o-animation: progress-bar-stripes 2s linear infinite;
+        animation: progress-bar-stripes 2s linear infinite;
+    }
+    a.ewRowLink,
+    a.ewRowLink:visited{
+        color:inherit;
+    }
+    .ewTableSelectRow a.ewRowLink:hover {
+        color: #6195B7;
+    }
+    .ewGrid .ewTable > tbody > tr > td,
+    .ewGrid .ewTable > thead > tr > td{
+        /*padding: 8px 20px;*/
+        padding: 5px 5px;
+    }
+    .ewGrid .ewTable > thead,
+    .ewGrid .ewTable > thead > tr > th,
+    .ewGrid .ewTable > thead > tr > td {
+        background-color: white;
+        color: inherit;
+        padding: 10px 0px 10px 10px;
+        font-weight: bold;
+        font-size: 105%;
+        border: 1px solid #E5E5E5;
+        background-image: none;
+        vertical-align: middle;
+    }
+    .ewGridUpperPanel,
+    .ewGridLowerPanel {
+        align-items: center;	
+        padding:5px 1px;
+        font-size: 80%;
+        background-color: #EDEDED;
+        color:#55616F;
+    }
+    .ewGrid .ewGridUpperPanel {
+        border-bottom: 5px solid #EDEDED;
+    }
+    .ewGrid .ewGridLowerPanel {
+        border-top: 5px solid #EDEDED;
+    }    
+    .ewIcon {
+        text-decoration: none !important;
+    }  
+/*.ewGrid .ewTable > tbody > tr > td:first-child:before {
+    content: "\203A";
+    font-weight: bold;
+    color:#E0E0E0;
+    margin-right: 3px;
+    }*/
+    .ewTableHeader .ewTableHeaderBtn .ewTableHeaderSort {
+        width: 20px;
+        height: 20px;
+        /* border-radius: 3px;*/
+        padding-left: 5px;
+   /* border: 1px solid #EDEDED;
+    background-color: #F8F8F8;  
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear*/
+}
+.ewTableHeader .ewTableHeaderBtn .ewTableHeaderSort:hover {
+    background-color: #ECF7FE;
+    border-color: #BADFF7;
+    color: #428BCA;
+    box-shadow: inset 0px 1px 0px white , 0px 1px 0px white;
+    -webkit-box-shadow: inset 0px 1px 0px white , 0px 1px 0px white;
+    -moz-box-shadow: inset 0px 1px 0px white , 0px 1px 0px white;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear
+}    
+a.btn {
+    text-decoration: none!important;
+}
+.ewGrid .ewTable .ewTableHeader .ewTableHeaderBtn .caret {
+  border-top-color: #000000;
+}
+.ewGrid .ewTable .ewTableHeader .ewTableHeaderBtn .ewSortUp {
+  border-bottom-color: #000000;
+}
+.e_enable{ 
+	cursor: pointer;
+}
+
+.ewPager .pagination > li > a,
+.ewPager .pagination > li > span {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 13px;
+}
+
+.ewGridUpperPanel .ewForm,.ewGridLowerPanel .ewForm { 
+  float: right;
+}
+
+
+

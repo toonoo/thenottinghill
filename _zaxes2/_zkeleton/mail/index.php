@@ -1,0 +1,1 @@
+<? header('location:http://mail.google.com/a/'.str_replace('www.','',$_SERVER["HTTP_HOST"])) ?>

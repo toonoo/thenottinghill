@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'edpensookregular';
+    src: url('../fonts/edpensook.eot');
+    src: url('../fonts/edpensook.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/edpensook.woff2') format('woff2'),
+         url('../fonts/edpensook.woff') format('woff'),
+         url('../fonts/edpensook.ttf') format('truetype'),
+         url('../fonts/edpensook.svg#edpensookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'edpensookbold';
+    src: url('../fonts/edpensook-bold.eot');
+    src: url('../fonts/edpensook-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/edpensook-bold.woff2') format('woff2'),
+         url('../fonts/edpensook-bold.woff') format('woff'),
+         url('../fonts/edpensook-bold.ttf') format('truetype'),
+         url('../fonts/edpensook-bold.svg#edpensookbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'crete_rounditalic';
+    src: url('creteround-italic.eot');
+    src: url('creteround-italic.eot?#iefix') format('embedded-opentype'),
+         url('creteround-italic.woff2') format('woff2'),
+         url('creteround-italic.woff') format('woff'),
+         url('creteround-italic.ttf') format('truetype'),
+         url('creteround-italic.svg#crete_rounditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'crete_roundregular';
+    src: url('creteround-regular.eot');
+    src: url('creteround-regular.eot?#iefix') format('embedded-opentype'),
+         url('creteround-regular.woff2') format('woff2'),
+         url('creteround-regular.woff') format('woff'),
+         url('creteround-regular.ttf') format('truetype'),
+         url('creteround-regular.svg#crete_roundregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
