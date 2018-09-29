@@ -9,8 +9,8 @@ if(isset($_GET['page'])) {
 $rows_per_page = 8;
 $start_row = paging_start_row($current_page, $rows_per_page); 
 $gallery = $db->GetAssoc("SELECT SQL_CALC_FOUND_ROWS * FROM gallery WHERE enable='1' ORDER BY created_date DESC LIMIT $start_row, $rows_per_page ");
-$found_rows = mysql_query("SELECT FOUND_ROWS();");
-$total_rows = mysql_result($found_rows, 0, 0);
+$found_rows = mysqli_query($con,"SELECT FOUND_ROWS();");
+$total_rows = mysqli_result($con,$found_rows, 0, 0);
 $total_pages = paging_total_pages($total_rows, $rows_per_page);
 
 $picture = $db->GetRow("SELECT * FROM gallery WHERE enable='1' ORDER BY created_date DESC ");

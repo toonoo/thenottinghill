@@ -1,16 +1,47 @@
 <?php 
 include "inc_header.php";
 
+// // toonoo==>Connect To DB
+// $hostname="localhost";
+// $database="thenotting_db";
+// $username="root";
+// $password="root";
+
+// @$con = mysqli_connect($hostname, $username, $password)
+//         or die("Could not connect to server " . mysql_error()); 
+//     mysqli_select_db($con, $database)
+//         or die("Error: Could not connect to the database: " . mysql_error());
+
+//     /*Check for Connection*/
+//     if(mysqli_connect_errno()){
+//         // Display Error message if fails
+//         echo 'Error, could not connect to the database please try again again.';
+//     exit();
+//     }
+
 $planid = $_GET['planid'];
-$maxid = $db->GetOne("SELECT MAX(id) FROM plans WHERE enable='1' ");
-$planAll = $db->GetAssoc("SELECT * FROM plans WHERE enable='1' ORDER BY created_date DESC ");
+// $maxid = $db->GetOne("SELECT MAX(id) FROM plans WHERE enable='1' ");
+// $planAll = $db->GetAssoc("SELECT * FROM plans WHERE enable='1' ORDER BY created_date DESC ");
+
+$maxid_ = mysqli_query($con,"SELECT MAX(id) FROM plans WHERE enable='1' ");
+$maxid_arr = mysqli_fetch_row($maxid_);
+$maxid = $maxid_arr[0];
+
+$planAll = mysqli_query($con,"SELECT * FROM plans WHERE enable='1' ORDER BY created_date DESC ");
+
 if ($planid) {
-	$planDetail = $db->GetRow("SELECT * FROM plans WHERE enable='1' AND id='$planid' ");
+	// $planDetail = $db->GetRow("SELECT * FROM plans WHERE enable='1' AND id='$planid' ");
+	$planDetails = mysqli_query($con,"SELECT * FROM plans WHERE enable='1' AND id='$planid' ");
+	$planDetail = mysqli_fetch_assoc($planDetails);
 }else{
-	$planDetail = $db->GetRow("SELECT * FROM plans WHERE enable='1' AND id='$maxid' ");
+	// $planDetail = $db->GetRow("SELECT * FROM plans WHERE enable='1' AND id='$maxid' ");
+	$planDetails = mysqli_query($con,"SELECT * FROM plans WHERE enable='1' AND id='$maxid' ");
+	$planDetail = mysqli_fetch_assoc($planDetails);
 }
-$planHouse = $db->GetAssoc("SELECT * FROM plans_house WHERE enable='1' AND plans_id='".$planDetail['id']."' ");
-//dump($planDetail);
+// print_r($planDetail);die();
+// $planHouse = $db->GetAssoc("SELECT * FROM plans_house WHERE enable='1' AND plans_id='".$planDetail['id']."' ");
+$planHouse = mysqli_fetch_assoc($con,"SELECT * FROM plans_house WHERE enable='1' AND plans_id='".$planDetail['id']."' ");
+// dump($planDetail);die();
 ?>
 
 <section class="plan clearfix">
