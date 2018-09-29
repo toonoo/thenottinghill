@@ -15,9 +15,10 @@ if (mysqli_connect_errno())
 
 $news = mysqli_query($con,"SELECT * FROM news WHERE enable='1' ORDER BY created_date DESC LIMIT 2 ");
 $gallery = mysqli_query($con,"SELECT * FROM gallery WHERE enable='1' ORDER BY created_date DESC LIMIT 4 ");
-$pic = mysqli_query("SELECT * FROM gallery WHERE enable='1' ORDER BY created_date DESC ");
-$sumcount = mysqli_query("SELECT count(id) FROM counter ");
+$pic = mysqli_fetch_assoc($con,"SELECT * FROM gallery WHERE enable='1' ORDER BY created_date DESC ");
 
+$row_sumcount = mysqli_query($con,"SELECT count(id) as totals FROM counter");
+$sumcount = mysqli_fetch_row($row_sumcount);
 ?>
 
 <section class="home clearfix">
@@ -214,8 +215,8 @@ $sumcount = mysqli_query("SELECT count(id) FROM counter ");
 							<?php } ?>
 						</div>
 						<div class="col-lg-12">
-							<div class="totalcount"><?php if($lang=='th'){echo"ผู้เข้าชมเว็บไซต์";}else{echo"Counter";} ?> <?php echo number_format($sumcount); ?> <?php if($lang=='th'){echo"ครั้ง";}else{echo"";} ?><div>
-						</di>
+							<div class="totalcount"><?php if($lang=='th'){echo"ผู้เข้าชมเว็บไซต์";}else{echo"Counter";} ?> <?php echo number_format($sumcount[0]); ?> <?php if($lang=='th'){echo"ครั้ง";}else{echo"";} ?><div>
+						</div>
 					</div>
 
 				</div>

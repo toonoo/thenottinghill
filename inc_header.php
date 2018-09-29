@@ -1,4 +1,11 @@
-<?php  
+<?php
+//include "inc_config.php"; 
+$con=mysqli_connect("localhost","root","root","thenotting_db");
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
 session_start();
 $page = basename($_SERVER['PHP_SELF']); 
 
@@ -20,8 +27,8 @@ if($num == 0){
     mysqli_query($strSQL);   
 }
 
-$slider = mysqli_query("SELECT * FROM slide WHERE enable='1' ORDER BY created_date DESC");
-
+$slider = mysqli_query($con,"SELECT * FROM slide WHERE enable='1' ORDER BY created_date DESC");
+// print_r($slider);
 // if($db->isConnected()){
 // 	echo 'toonoo1111222';die();
 // 	$slider = $db->GetAssoc("SELECT * FROM slide WHERE enable='1' ORDER BY created_date DESC");
