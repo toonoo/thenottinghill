@@ -8,12 +8,33 @@ if(isset($_GET['page'])) {
 }
 $rows_per_page = 8;
 $start_row = paging_start_row($current_page, $rows_per_page); 
-$gallery = $db->GetAssoc("SELECT SQL_CALC_FOUND_ROWS * FROM gallery WHERE enable='1' ORDER BY created_date DESC LIMIT $start_row, $rows_per_page ");
+
+// $gallery = $db->GetAssoc("SELECT SQL_CALC_FOUND_ROWS * FROM gallery WHERE enable='1' ORDER BY created_date DESC LIMIT $start_row, $rows_per_page ");
+$gallery = mysqli_query($con,"SELECT SQL_CALC_FOUND_ROWS * FROM gallery WHERE enable='1' ORDER BY created_date DESC LIMIT $start_row, $rows_per_page ");
+
 $found_rows = mysqli_query($con,"SELECT FOUND_ROWS();");
+
 $total_rows = mysqli_result($con,$found_rows, 0, 0);
+
 $total_pages = paging_total_pages($total_rows, $rows_per_page);
 
-$picture = $db->GetRow("SELECT * FROM gallery WHERE enable='1' ORDER BY created_date DESC ");
+// $picture = $db->GetRow("SELECT * FROM gallery WHERE enable='1' ORDER BY created_date DESC ");
+$picture_ = mysqli_query($con,"SELECT * FROM gallery WHERE enable='1' ORDER BY created_date DESC ");
+$picture = mysqli_fetch_row($picture_);
+// print_r($picture);die();
+//==toonoo add function===
+function mysqli_result($res,$row=0,$col=0){
+    $numrows = mysqli_num_rows($res);
+    if ($numrows && $row <= ($numrows-1) && $row >=0){
+        mysqli_data_seek($res,$row);
+        $resrow = (is_numeric($col)) ? mysqli_fetch_row($res) : mysqli_fetch_assoc($res);
+        if (isset($resrow[$col])){
+            return $resrow[$col];
+        }
+    }
+    return false;
+}
+//==========end=============//
 ?>
 
 <section class="gallery clearfix">
